@@ -1,0 +1,649 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+DTSTART:20190310T030000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZNAME:EDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20191103T010000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZNAME:EST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:350945-Event@joinhandshake.com
+DTSTART;TZID=America/New_York:20190920T100000
+DTEND;TZID=America/New_York:20190920T130000
+CREATED:20190829T094112
+DESCRIPTION:***STUDENT REGISTRATION REQUIRED***\n\nThe Engineering Career F
+ air will include companies from many engineering disciplines including civ
+ il\, mechanical\, biomedical\, chemical\, consumer packaged goods\, and mo
+ re. We welcome students who are interested in internships as well as full-
+ time opportunities. Check out the employer map in the Career Fair Plus App
+  to plan your time at the fair.\n\nELIGIBILITY AND ENTRANCE TIMES FOR THE 
+ FAIR \nPlease note: Due to a high volume of interested students\, there wi
+ ll be two entry groups with different start times. Please verify your resp
+ ective group and register for that session in LionSHARE after registration
+  opens in September. Registration is required for entry. Register by noon\
+ , September 19th.  \n\nDue to the popularity of this event\, it is likely 
+ that there will be a line to enter. \n\nYour group affiliation will be ver
+ ified before entry. \n\nEligibility for Group 1 - \nStarting at 10:00 a.m.
+ \, the following students may begin to enter the fair.\nUndergraduate stud
+ ents in Columbia Engineering\, Columbia College\, and General Studies.\nCo
+ lumbia Engineering Master’s students graduating in October 2019 or Decem
+ ber 2019.\nPhD students\n\nIf you are a student in Group 1 but need to att
+ end the career fair later in the day\, you may wait on line to access the 
+ fair in Group 2.\n\nGroup 1 will begin to enter the fair starting at 10:00
+  a.m. Your group will be verified before entry.\n\nEligibility for Group 2
+  -\nStarting at 1:00 p.m.\, the following students may join the line to ac
+ cess the fair. \nColumbia Engineering Master’s students graduating in Oc
+ tober 2020\, December 2020\,  or May  2021.\nMaster’s students in the Gr
+ aduate School of Arts and Sciences or School of the Arts\n\nIf you are a s
+ tudent in the Group 2 cohort\, you will be permitted to enter the event on
+ ly after 1:00 p.m. You must register to attend.  Your group will be verifi
+ ed before entry.\n\nQuestions? Contact us at cce-events@columbia.edu.
+LAST-MODIFIED:20190903T144811
+LOCATION:Lerner Hall\, Roone Arledge Auditorium\, 2920 Broadway\, New York\
+ , NY 10027\, USA
+SUMMARY:Group 1 - 2019 Engineering Career Fair - Student Registration 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12477-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20190920T100000
+DTEND;TZID=America/New_York:20190920T160000
+CREATED:20190418T102940
+DESCRIPTION:***STUDENT REGISTRATION REQUIRED***The 2019 Engineering Career 
+ Fair will include organizations from many engineering disciplines includin
+ g civil\, mechanical\, biomedical\, chemical\, consumer packaged goods\, a
+ nd more. We welcome undergraduate\, masters and PhD students who are inter
+ ested in internships as well as full-time opportunities to attend.ELIGIBIL
+ ITY AND ENTRANCE TIMES FOR THE FAIRPlease note: Due to a high volume of in
+ terested students\, there will be two entry groups with different start ti
+ mes. Please verify your respective group and register for that session. Re
+ gistration is required for entry. Register by noon\, September 19th. Due t
+ o the popularity of this event\, it is likely that there will be a line to
+  enter. Your group affiliation will be verified before entry. Eligibility 
+ for Group 1 - Starting at 10:00 a.m.\, the following students may begin to
+  enter the fair.\nUndergraduate students in Columbia Engineering\, Columbi
+ a College\, and General Studies.\nColumbia Engineering Master’s students
+  graduating in October 2019 or December 2019.\nPhD students\nIf you are a 
+ student in Group 1 but need to attend the career fair later in the day\, y
+ ou may wait on line to access the fair in Group 2.\n\nGroup 1 will begin t
+ o enter the fair starting at 10:00 a.m. Your group will be verified before
+  entry. Register for Group 1. Eligibility for Group 2 -\nStarting at 1:00
+  p.m.\, the following students may join the line to access the fair. \nCol
+ umbia Engineering Master’s students graduating in October 2020\, Decembe
+ r 2020\, or May 2021.\nMaster’s students in the Graduate School of Arts 
+ and Sciences or School of the Arts\nIf you are a student in the Group 2 co
+ hort\, you will be permitted to enter the event only after 1:00 p.m. You m
+ ust register to attend. Your group will be verified before entry. Register
+  for Group 2. Questions? Contact us at cce-events@columbia.edu.Details an
+ d profiles of employers attending are available by clicking "All Employers
+ " above\, or by downloading the Columbia Career Fair Plus App.Suggested At
+ tire: BusinessPlease note this fair is open to Columbia University student
+ s and alumni from the following schools only:The Fu Foundation School of E
+ ngineering and Applied ScienceColumbia CollegeGeneral StudiesGraduate Scho
+ ol of Arts and SciencesSchool of the ArtsBarnard College
+LAST-MODIFIED:20190418T103835
+LOCATION:Alfred Lerner Hall\, 2920 Broadway\, New York\, NY 10027\, USA
+SUMMARY:2019 Engineering Career Fair - Center for Career Education  - 2019 
+ Engineering Career Fair
+X-ALT-DESC;FMTTYPE=text/html:<h4>***STUDENT REGISTRATION REQUIRED***</h4>Th
+ e 2019 Engineering Career Fair will include organizations from many engine
+ ering disciplines including civil\, mechanical\, biomedical\, chemical\, c
+ onsumer packaged goods\, and more. We welcome undergraduate\, masters and 
+ PhD students who are interested in internships as well as full-time opport
+ unities to attend.<br><h4>ELIGIBILITY AND ENTRANCE TIMES FOR THE FAIR</h4>
+ Please note: Due to a high volume of interested students\, there will be t
+ wo entry groups with different start times. Please verify your respective 
+ group and register for that session. Registration is required for entry. R
+ egister by noon\, September 19th. <br><br>Due to the popularity of this ev
+ ent\, it is likely that there will be a line to enter. <br><br>Your group 
+ affiliation will be verified before entry. <br><h4>Eligibility for Group 1
+  - </h4>Starting at 10:00 a.m.\, the following students may begin to enter
+  the fair.\nUndergraduate students in Columbia Engineering\, Columbia Coll
+ ege\, and General Studies.\nColumbia Engineering Master’s students gradu
+ ating in October 2019 or December 2019.\nPhD students\n<br><br>If you are 
+ a student in Group 1 but need to attend the career fair later in the day\,
+  you may wait on line to access the fair in Group 2.\n\n<br><br>Group 1 wi
+ ll begin to enter the fair starting at 10:00 a.m. Your group will be verif
+ ied before entry. <b>Register for </b><a target="_blank" rel="nofollow" hr
+ ef="https://columbia.joinhandshake.com/events/350945"><b>Group 1</b></a><b
+ >.&nbsp\;</b><br><h4>Eligibility for Group 2 -\n</h4>Starting at 1:00 p.m.
+ \, the following students may join the line to access the fair. \nColumbia
+  Engineering Master’s students graduating in October 2020\, December 202
+ 0\, or May 2021.\nMaster’s students in the Graduate School of Arts and S
+ ciences or School of the Arts\n<br><br>If you are a student in the Group 2
+  cohort\, you will be permitted to enter the event only after 1:00 p.m. Yo
+ u must register to attend. Your group will be verified before entry. <b>Re
+ gister for </b><a target="_blank" rel="nofollow" href="https://columbia.jo
+ inhandshake.com/events/350961"><b>Group 2</b></a><b>.&nbsp\;</b><br><br>Qu
+ estions? Contact us at cce-events@columbia.edu.<br><br>Details and profile
+ s of employers attending are available by clicking "All Employers" above\,
+  or by downloading the Columbia Career Fair Plus App.<br><br><b>Suggested 
+ Attire: Business<br><br></b>Please note this fair is open to Columbia Univ
+ ersity students and alumni from the following schools only:<br><ul><li>The
+  Fu Foundation School of Engineering and Applied Science</li><li>Columbia 
+ College<br></li><li>General Studies</li><li>Graduate School of Arts and Sc
+ iences</li><li>School of the Arts</li><li>Barnard College</li></ul><p></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12647-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20191010T180000
+DTEND;TZID=America/New_York:20191010T193000
+CREATED:20190425T133843
+DESCRIPTION:The Center for Career Education (CCE) will hold a panel and net
+ working session for organizations with opportunities in Healthcare and Lif
+ e Sciences. This event will shed light on the opportunities available in t
+ hese industries and allow you to network with professionals from several o
+ rganizations. Eligibility: Students that attend Columbia College\, Fu Fou
+ ndation School of Engineering and Applied Science\, School of General Stud
+ ies\, Graduate School of Arts & Sciences\, School of the Arts and Barnard 
+ College.\n\nLocation: Center for Career Education: East Campus\, Lower Le
+ vel Resume: It is always good practice to have your resume on-hand. Empl
+ oyers may request one\, and it is a great way to leave your contact inform
+ ation with them. Suggested Attire: Professional attire suggested\n\nClick
+  the "Join Event" button above to confirm your attendance.\n
+LAST-MODIFIED:20190425T134142
+LOCATION:Columbia University Center for Career Education\, East Campus\, Lo
+ wer Level
+SUMMARY:2019 Industry Showcase: Healthcare
+X-ALT-DESC;FMTTYPE=text/html:The Center for Career Education (CCE) will hol
+ d a panel and networking session for organizations with opportunities in H
+ ealthcare and Life Sciences. This event will shed light on the opportuniti
+ es available in these industries and allow you to network with professiona
+ ls from several organizations.&nbsp\;<br><p><b><u>Eligibility</u>:<u></u><
+ /b> Students that attend Columbia College\, Fu Foundation School of Engine
+ ering and Applied Science\, School of General Studies\, Graduate School of
+  Arts &amp\; Sciences\, School of the Arts and Barnard College.<br><br><b>
+ <u>\n\n<b><u>Location</u>:<u></u></b></u></b>&nbsp\;Center for Career Educ
+ ation: East Campus\, Lower Level&nbsp\;</p><p><b><u>Resume</u>:<u></u></b>
+ &nbsp\;It is always good practice to have your resume on-hand. Employers m
+ ay request one\, and it is a great way to leave your contact information w
+ ith them.<br>&nbsp\;<br><b><u>Suggested Attire</u>:<u></u></b> Professiona
+ l attire suggested<br></p><p>\n\nClick the "Join Event" button above to co
+ nfirm your attendance.\n<br></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12695-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20191004T110000
+DTEND;TZID=America/New_York:20191004T150000
+CREATED:20190429T145622
+DESCRIPTION:For one afternoon\, top tech companies will takeover Lerner in 
+ order to connect with Columbia Computer Science & Computer Engineering stu
+ dents. Our Tech Connect event will put you at the roundtable with recruite
+ rs/alumni/engineers working at innovative technology focused companies. If
+  you want to work in tech\, this is the event you can’t miss!Barnard stu
+ dents are welcome to attend and can register by emailing cce-events@columb
+ ia.edu. Please include your preferred session time (11:00 a.m. or 1:30 p.m
+ .) in the email. ﻿AIM OF THE EVENTThis event is designed from the ground
+  up as an opportunity to learn about product innovations and projects from
+  the company representatives living the work every day. You will also lear
+ n about company culture\, career pathways\, and of course\, internship and
+  full-time job opportunities in computer science/engineering roles.This is
+  a resume-free zone! The focus should be on meaningful conversations about
+  the work and life at the companies represented. Seek answers that you won
+ ’t be able to find on the internet! You are welcome to submit your resum
+ e to our resume book that will be sent to the attending employers after th
+ e event. Instructions on submission will follow your registration.Event Fo
+ rmatIMPORTANT: Students must register for an entry time via LionSHARE to g
+ ain access to this event. How it works - The event will take place in two 
+ sessions. NOTE: If you do not show up within 30 minutes of your scheduled 
+ start time\, your spot may be given to a student on the waiting list.Sessi
+ on 1: 11:00 a.m. - 12:30 p.m.Session 2: 1:30 - 3:00 p.m.You will be asked 
+ which session you want to attend when you register for the event. You will
+  only be able to select one option.You will then receive a ticket with you
+ r entry time on October 3rd. You must show your ticket on the day of the e
+ vent to enter. NOTE: If you do not show up within 15 minutes of your sched
+ uled start time\, your spot may be given to a student on the waiting list.
+ DRESS CODE: Casual but neat. No suits - but\, remember that how you dress 
+ is a reflection of your professionalism. Put your best foot forward!RULES 
+ OF THE EVENTTo make sure students have the opportunity to talk with multip
+ le organizations\, students will be required to rotate tables at regular i
+ ntervals.Tip - Your goal should be to speak to 5-8 employers in your 90-mi
+ nute session.Tip - Keep in mind\, you want to have quality conversations\,
+  but you don’t want to waste time waiting for a seat! Some of the best c
+ onversations occur when you take the opportunity at an open spot and speak
+  to a new employer.Roundtable discussionEach registered company will sit a
+ t a banquet size round table. Students will be invited to join the company
+  representatives at their table for discussion. The employers present will
+  be eager to discuss with you their work\, team projects\, achievements an
+ d challenges\, their career trajectory\, and the culture of the company.Ti
+ p - We strongly discourage students from talking about specific recruiting
+  timelines and processes. This is often information found on the company's
+  career website - try to gain knowledge about the organization that you ca
+ nnot gather from their website!GUIDE: POTENTIAL TOPICS OF CONVERSATIONIndu
+ stry challenges + opportunitiesUser-driven innovationsCompany prioritiesDa
+ y-to-day work of an engineerCross-team collaborationImpact of AI on design
+  and workOrganization of the company - how do the engineering teams intera
+ ct?Training programs + advancement opportunities or patternsLeadership int
+ eraction with engineersI REGISTERED FOR THE EVENT\, NOW WHAT?We would reco
+ mmend three important things in preparing for this event.Submit your resum
+ e to the resume book.If you register\, you will be permitted to submit you
+ r resume to the resume book starting on Monday\, September 23rd . All empl
+ oyers will be given a resume book after the event. Remember\, this is a re
+ sume-free zone. Use your time during the event for discussion.How to submi
+ t to the resume book: Log in to LionSHARE with your UNI.Submit your resum
+ e to the job posting — Tech Connect Attendee at Columbia University (s
+ tarting on September 23rd)Please note that your submission is not an actua
+ l job application.You can submit your resume through Monday\, Oct. 7th at 
+ 12:00 p.m.NOTE: Only students who attend the event will be included in the
+  resume book. If you submit a resume and then do not attend Tech Connect\,
+  your resume will not be included.2. Look at the employers comingView the 
+ list of employers attending in LionSHARE.Learn more about these companies 
+ by visiting their websites\, following them on LinkedIn and social media\,
+  and check out how they are mentioned in the news.Create a list of 10-15 t
+ ables you would like to speak with. You may not immediately get a seat at 
+ a table you want to join\, so make sure you have a list of alternatives to
+  join.3. Develop QuestionsYou will be at the table with company representa
+ tives. This is your time to ask your questions about life and work as a de
+ veloper.Be thoughtful - the quality of the questions you ask can set you a
+ part. Just ask the Tech Pros who attended our Software Practice Interview 
+ Night.  Think about questions that will help you decide what kind of comp
+ any you want to work for. For example: Big or small? Startup or corporate?
+  Individual or group work? Who do you want as your end user?HOW TO PREPARE
+  FOR A NETWORKING EVENTMaking the Most of a Networking EventKnow Before Yo
+ u Go: Researching OrganizationsCraft Your 30-Second Personal Introduction
+LAST-MODIFIED:20190429T153632
+LOCATION:New York City\, New York\, United States
+SUMMARY:2019 Tech Connect - Center for Career Education - 2019 Tech Connect
+  
+X-ALT-DESC;FMTTYPE=text/html:<p><b>For one afternoon\, top tech companies w
+ ill takeover Lerner in order to connect with Columbia Computer Science &am
+ p\; Computer Engineering students. Our Tech Connect event will put you at 
+ the roundtable with recruiters/alumni/engineers working at innovative tech
+ nology focused companies. If you want to work in tech\, this is the event 
+ you can’t miss!</b><br></p><p><strong>Barnard students are welcome to at
+ tend and can register by emailing cce-events@columbia.edu. Please include 
+ your preferred session time (11:00 a.m. or 1:30 p.m.) in the email. ﻿</s
+ trong><b><br></b></p><h3>AIM OF THE EVENT</h3><p>This event is designed fr
+ om the ground up as an opportunity to learn about product innovations and 
+ projects from the company representatives living the work every day. You w
+ ill also learn about company culture\, career pathways\, and of course\, i
+ nternship and full-time job opportunities in computer science/engineering 
+ roles.</p><p><strong>This is a resume-free zone! </strong>The focus should
+  be on meaningful conversations about the work and life at the companies r
+ epresented. Seek answers that you won’t be able to find on the internet!
+  You are welcome to submit your resume to our resume book that will be sen
+ t to the attending employers after the event. Instructions on submission w
+ ill follow your registration.<br></p><h3>Event Format</h3><p><strong>IMPOR
+ TANT: Students must register for an entry time via LionSHARE to gain acces
+ s to this event. </strong></p><p>How it works - The event will take place 
+ in two sessions. NOTE: If you do not show up within 30 minutes of your sch
+ eduled start time\, your spot may be given to a student on the waiting lis
+ t.</p><p><strong>Session 1: 11:00 a.m. - 12:30 p.m.</strong></p><p><strong
+ >Session 2: 1:30 - 3:00 p.m.</strong></p><p>You will be asked which sessio
+ n you want to attend when you register for the event. You will only be abl
+ e to select one option.</p><p>You will then receive a ticket with your ent
+ ry time on October 3rd. You must show your ticket on the day of the event 
+ to enter. NOTE: If you do not show up within 15 minutes of your scheduled 
+ start time\, your spot may be given to a student on the waiting list.</p><
+ p><strong>DRESS CODE: Casual but neat. No suits - but\, remember that how 
+ you dress is a reflection of your professionalism. Put your best foot forw
+ ard!</strong></p><h3>RULES OF THE EVENT</h3><p>To make sure students have 
+ the opportunity to talk with multiple organizations\, students will be req
+ uired to rotate tables at regular intervals.</p><p><strong>Tip -</strong> 
+ Your goal should be to speak to 5-8 employers in your 90-minute session.</
+ p><p><strong>Tip -</strong> Keep in mind\, you want to have quality conver
+ sations\, but you don’t want to waste time waiting for a seat! Some of t
+ he best conversations occur when you take the opportunity at an open spot 
+ and speak to a new employer.</p><h3>Roundtable discussion</h3><p>Each regi
+ stered company will sit at a banquet size round table. Students will be in
+ vited to join the company representatives at their table for discussion. T
+ he employers present will be eager to discuss with you their work\, team p
+ rojects\, achievements and challenges\, their career trajectory\, and the 
+ culture of the company.</p><p><strong>Tip - </strong>We <em>strongly</em> 
+ discourage students from talking about specific recruiting timelines and p
+ rocesses. This is often information found on the company's career website 
+ - try to gain knowledge about the organization that you cannot gather from
+  their website!</p><h3>GUIDE: POTENTIAL TOPICS OF CONVERSATION</h3><ul><li
+ >Industry challenges + opportunities</li><li>User-driven innovations</li><
+ li>Company priorities</li><li>Day-to-day work of an engineer</li><li>Cross
+ -team collaboration</li><li>Impact of AI on design and work</li><li>Organi
+ zation of the company - how do the engineering teams interact?</li><li>Tra
+ ining programs + advancement opportunities or patterns</li><li>Leadership 
+ interaction with engineers</li></ul><h3>I REGISTERED FOR THE EVENT\, NOW W
+ HAT?</h3><p>We would recommend three important things in preparing for thi
+ s event.</p><ol><li><h4>Submit your resume to the resume book.</h4></li></
+ ol><p>If you register\, you will be permitted to submit your resume to the
+  resume book starting on Monday\, September 23rd . All employers will be g
+ iven a resume book after the event. Remember\, this is a resume-free zone.
+  Use your time during the event for discussion.</p><p><strong>How to submi
+ t to the resume book: </strong></p><ul><li>Log in to <a target="_blank" re
+ l="nofollow">LionSHARE</a>&nbsp\;with your UNI.</li><li>Submit your resume
+  to the <a target="_blank" rel="nofollow">job posting — Tech Connect A
+ ttendee at Columbia University (starting on September 23rd)</a></li><li>Pl
+ ease note that your submission is not an actual job application.</li><li>Y
+ ou can submit your resume through Monday\, Oct. 7th at 12:00 p.m.</li><li>
+ NOTE: Only students who attend the event will be included in the resume bo
+ ok. If you submit a resume and then do not attend Tech Connect\, your resu
+ me will not be included.</li></ul><h4>2. Look at the employers coming</h4>
+ <ul><li>View the <a target="_blank" rel="nofollow" href="https://app.joinh
+ andshake.com/career_fairs/5304/employers_list">list of employers attending
+ </a> in LionSHARE.</li><li>Learn more about these companies by visiting th
+ eir websites\, following them on LinkedIn and social media\, and check out
+  how they are mentioned in the news.</li><li>Create a list of 10-15 tables
+  you would like to speak with. You may not immediately get a seat at a tab
+ le you want to join\, so make sure you have a list of alternatives to join
+ .</li></ul><h4>3. Develop Questions</h4><ul><li>You will be at the table w
+ ith company representatives. This is your time to ask your questions about
+  life and work as a developer.</li><li>Be thoughtful - the quality of the 
+ questions you ask can set you apart. Just ask the <a target="_blank" rel="
+ nofollow">Tech Pros who attended our Software Practice Interview Night</a>
+ . &nbsp\;</li><li>Think about questions that will help you decide what kin
+ d of company you want to work for. For example: Big or small? Startup or c
+ orporate? Individual or group work? Who do you want as your end user?</li>
+ </ul><h3>HOW TO PREPARE FOR A NETWORKING EVENT</h3><ul><li><a target="_bla
+ nk" rel="nofollow" href="https://www.careereducation.columbia.edu/resource
+ s/making-most-networking-event">Making the Most of a Networking Event</a><
+ /li><li><a target="_blank" rel="nofollow" href="https://www.careereducatio
+ n.columbia.edu/resources/what-know-you-go-researching-organizations">Know 
+ Before You Go: Researching Organizations</a></li><li><a target="_blank" re
+ l="nofollow" href="https://www.careereducation.columbia.edu/resources/how-
+ network-just-30-seconds">Craft Your 30-Second Personal Introduction</a></l
+ i></ul>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12697-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20190916T180000
+DTEND;TZID=America/New_York:20190916T193000
+CREATED:20190429T151330
+DESCRIPTION:Interested in working in consulting\, but not sure if working a
+ t a large firm is\nfor you?  Or\, do you just want to learn\nmore about c
+ areer options within the industry?\n\nWe are holding a joint networking se
+ ssion for a number of boutique\nconsulting firms. In previous years\, repr
+ esentatives included firms\nspecializing in strategy\, digital\, financial
+ \, supply chain\, operational\, as\nwell as management consulting.\n\nThis
+  is a great opportunity for students who are just starting to explore\ncar
+ eer opportunities in consulting or for those that have had prior internshi
+ p\nexperience in the industry.  It is never\ntoo early to learn more abou
+ t the variety of\ncareer paths available in consulting.\n\nEVENT FORMAT:Th
+ is showcase no longer includes a panel.Employers will be represented in a 
+ career fair-style format with tables showcasing the company. Students are 
+ encouraged to network with as many employers as they like through the dura
+ tion of the event.\n\nWHO SHOULD ATTEND:\n\nUndergraduate and graduate stu
+ dents interested in learning about the consulting industry from the follow
+ ing schools: Columbia CollegeSchool of General StudiesThe Fu Foundation Sc
+ hool of Engineering and Applied ScienceThe Graduate School of Arts and Sci
+ encesThe School of the Arts\n\nHOW TO PREPARE:Research: Research the compa
+ nies attending ahead of time so that you can have productive conversation
+ s at the event.Prepare your resume: It is always good practice to have you
+ r resume on-hand. Employers may request one.|Review the recap of last year
+ 's showcase for more information on what to expect at this event.Suggeste
+ d Attire: Business ProfessionalWe look forward to seeing you at the 2019 I
+ ndustry Showcase: Boutique Consulting!
+LAST-MODIFIED:20190827T144906
+LOCATION:Auditorium\, Alfred Lerner Hall\, Columbia University\, 2920 Broad
+ way\, New York\, NY 10027\, USA
+SUMMARY:2019 Industry Showcase: Boutique Consulting
+X-ALT-DESC;FMTTYPE=text/html:<p>Interested in working in consulting\, but n
+ ot sure if working at a large firm is\nfor you? &nbsp\;Or\, do you just wa
+ nt to learn\nmore about career options within the industry?</p>\n\n<p>We a
+ re holding a joint networking session for a number of boutique\nconsulting
+  firms. In previous years\, representatives included firms\nspecializing i
+ n strategy\, digital\, financial\, supply chain\, operational\, as\nwell a
+ s management consulting.</p>\n\n<p>This is a great opportunity for student
+ s who are just starting to explore\ncareer opportunities in consulting or 
+ for those that have had prior internship\nexperience in the industry. &nbs
+ p\;It is never\ntoo early to learn more about the variety of\ncareer paths
+  available in consulting.</p>\n\n<h3>EVENT FORMAT:</h3><p><i><u>This showc
+ ase no longer includes a panel.</u></i></p><p>Employers will be represente
+ d in a career fair-style format with tables showcasing the company. Studen
+ ts are encouraged to network with as many employers as they like through t
+ he duration of the event.</p>\n\n<h3>WHO SHOULD ATTEND:</h3>\n\nUndergradu
+ ate and graduate students interested in learning about the consulting indu
+ stry from the following schools: <br><br>Columbia College<br>School of Gen
+ eral Studies<br>The Fu Foundation School of Engineering and Applied Scienc
+ e<br>The Graduate School of Arts and Sciences<br>The School of the Arts<br
+ >\n\n<h3>HOW TO PREPARE:</h3><p><b>Research:</b> <a target="_blank" rel="n
+ ofollow" href="http://bit.ly/2szAGEy">Research the companies</a>&nbsp\;att
+ ending ahead of time so that you can have productive conversations at the 
+ event.<br><b>Prepare your resume:</b> It is always good practice to have y
+ our resume on-hand. Employers may request one.|<br><b>Review </b>the <a ta
+ rget="_blank" rel="nofollow" href="https://www.careereducation.columbia.ed
+ u/resources/what-know-you-go-researching-organizations">recap of last year
+ 's showcase</a><b></b>&nbsp\;for more information on what to expect at thi
+ s event.<br><b>Suggested Attire:</b> Business Professional</p><p><br></p><
+ p><b>We look forward to seeing you at the 2019 Industry Showcase: Boutique
+  Consulting!</b><br></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12703-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20190909T180000
+DTEND;TZID=America/New_York:20190909T193000
+CREATED:20190429T164932
+DESCRIPTION:Interested in working financial services\, but not sure if work
+ ing at a big bank is for you? Or\, do you just want to learn more about ca
+ reer options within the industry?Join us for this evening of connections w
+ ith representatives from a number of financial firms outside of the bulge 
+ bracket banks. In previous years\, representatives included a boutique ban
+ ks\, hedge funds\, commercial banks\, and firms specializing in risk manag
+ ement\, asset management\, and private equity.This is a great opportunity 
+ for students who are just starting to explore career opportunities in fina
+ nce or for those that have had prior internship experience in the industry
+ . It is never too early to start networking and getting to learn more abou
+ t the variety of career paths available in finance.\n\nTARGET AUDIENCE:Und
+ ergraduate students interested in learning about the finance industry from
+  the following schools: Columbia CollegeSchool of General StudiesThe Fu Fo
+ undation School of Engineering and Applied Science\n\nHOW TO PREPARE:Resea
+ rch: Research the companies attending ahead of time so that you can have 
+ productive conversations at the event.Resume: It is always good practice t
+ o have your resume on-hand. Employers may request one.Review CCE’s Makin
+ g the Most of an Industry Showcase Resource for more information on how t
+ o prepare for this event.Suggested Attire: Business
+LAST-MODIFIED:20190501T084539
+LOCATION:Room 555\, Lerner Hall\, Columbia University\, New York\, NY
+SUMMARY:2019 Industry Showcase: Beyond the Bulge Bracket (Boutique Financia
+ l Services) - 2019 Industry Showcase:  Beyond the Bulge Bracket
+X-ALT-DESC;FMTTYPE=text/html:<p>Interested in working financial services\, 
+ but not sure if working at a big bank is for you? Or\, do you just want to
+  learn more about career options within the industry?</p><p>Join us for th
+ is evening of connections with representatives from a number of financial 
+ firms outside of the bulge bracket banks. In previous years\, representati
+ ves included a boutique banks\, hedge funds\, commercial banks\, and firms
+  specializing in risk management\, asset management\, and private equity.<
+ /p><p>This is a great opportunity for students who are just starting to ex
+ plore career opportunities in finance or for those that have had prior int
+ ernship experience in the industry. It is never too early to start network
+ ing and getting to learn more about the variety of career paths available 
+ in finance.</p>\n\n<h3>TARGET AUDIENCE:</h3>Undergraduate students interes
+ ted in learning about the finance industry from the following schools: <br
+ ><br>Columbia College<br>School of General Studies<br>The Fu Foundation Sc
+ hool of Engineering and Applied Science<br><br>\n\n<h3>HOW TO PREPARE:</h3
+ ><p>Research: <a target="_blank" rel="nofollow" href="http://bit.ly/2szAGE
+ y" title="Link: http://bit.ly/2szAGEy">Research the companies</a>&nbsp\;at
+ tending ahead of time so that you can have productive conversations at the
+  event.</p><p>Resume: It is always good practice to have your resume on-ha
+ nd. Employers may request one.</p><p>Review CCE’s <a target="_blank" rel
+ ="nofollow" href="http://bit.ly/2tPIXbM" title="Link: http://bit.ly/2tPIXb
+ M">Making the Most of an Industry Showcase Resource</a>&nbsp\;for more inf
+ ormation on how to prepare for this event.</p><p>Suggested Attire: Busines
+ s<br></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12744-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20190913T120000
+DTEND;TZID=America/New_York:20190913T160000
+CREATED:20190430T164730
+DESCRIPTION:The 2019 Undergraduate Fall Career Fair will include organizati
+ ons from a diversity of industries\, including: Finance\, Consulting\, Con
+ sumer Packaged Goods\, Media\, Marketing\, Advertising\, and more. It is a
+  unique and productive way to meet employers looking to hire students from
+  Columbia University.Details and profiles of employers attending are avail
+ able by clicking "All Employers" above\, or by downloading the Career Fair
+  Plus App and searching for Columbia University.WHO CAN ATTEND:We welcome 
+ undergraduate students who are interested in internships as well as full-t
+ ime opportunities. Please note\, this event is only open to current underg
+ raduate students and alumni who graduated in 2016 or later from the follow
+ ing Columbia University schools:Columbia CollegeThe Fu Foundation School o
+ f Engineering and Applied ScienceSchool of General StudiesBarnard CollegeH
+ OW TO PREPARE:Research: Research the companies attending ahead of time s
+ o that you can have productive conversations at the event.Prepare your res
+ ume: It is always good practice to have your resume on-hand. Employers ma
+ y request one.|Review CCE’s Career Fair FAQ's for more information on h
+ ow to prepare for this event.Suggested Attire: Business ProfessionalWe lo
+ ok forward to seeing you at the 2019 Undergraduate Career Fair!
+LAST-MODIFIED:20190528T121614
+LOCATION:Auditorium\, Alfred Lerner Hall\, Columbia University\, 2920 Broad
+ way\, New York\, NY 10027\, USA
+SUMMARY:2019 Undergraduate Fall Career Fair - Center for Career Education
+X-ALT-DESC;FMTTYPE=text/html:<span class="wysiwyg-color-black">The </span><
+ b><span class="wysiwyg-color-black">2019 Undergraduate Fall Career Fair</s
+ pan></b><span class="wysiwyg-color-black"> will include organizations from
+  a diversity of industries\, including: Finance\, Consulting\, Consumer Pa
+ ckaged Goods\, Media\, Marketing\, Advertising\, and more. It is a unique 
+ and productive way to meet employers looking to hire students from Columbi
+ a University.</span><br><br><span class="wysiwyg-color-black">Details and 
+ profiles of employers attending are available by clicking "All Employers" 
+ above\, or by downloading the Career Fair Plus App and searching for Colum
+ bia University.</span><br><h3><span class="wysiwyg-color-black">WHO CAN AT
+ TEND:</span></h3><span class="wysiwyg-color-black">We welcome undergraduat
+ e students who are interested in internships as well as full-time opportun
+ ities. Please note\, this event is only open to current undergraduate stud
+ ents and alumni who graduated in 2016 or later from the following Columbia
+  University schools:</span><p></p><ul><li>Columbia College<br></li><li><sp
+ an class="wysiwyg-color-black">The Fu Foundation School of Engineering and
+  Applied Science</span></li><li><span class="wysiwyg-color-black">School o
+ f General Studies</span></li><li><span class="wysiwyg-color-black">Barnard
+  College</span></li></ul><p></p><h3><span class="wysiwyg-color-black">HOW 
+ TO PREPARE:</span></h3><b><span class="wysiwyg-color-black">Research:</spa
+ n></b><span class="wysiwyg-color-black">&nbsp\;</span><a target="_blank" r
+ el="nofollow" href="http://bit.ly/2szAGEy"><span class="wysiwyg-color-blac
+ k">Research the companies</span></a><span class="wysiwyg-color-black">&nbs
+ p\;attending ahead of time so that you can have productive conversations a
+ t the event.</span><br><b><span class="wysiwyg-color-black">Prepare your r
+ esume:</span></b><span class="wysiwyg-color-black">&nbsp\;It is always goo
+ d practice to have your resume on-hand. Employers may request one.|</span>
+ <br><b><span class="wysiwyg-color-black">Review&nbsp\;</span></b><span cla
+ ss="wysiwyg-color-black">CCE’s </span><a target="_blank" rel="nofollow" 
+ href="https://www.careereducation.columbia.edu/resources/career-fair-faqs"
+ ><span class="wysiwyg-color-black">Career Fair FAQ's</span></a><span class
+ ="wysiwyg-color-black"> for more information on how to prepare for this ev
+ ent.</span><br><b><span class="wysiwyg-color-black">Suggested Attire:</spa
+ n></b><span class="wysiwyg-color-black">&nbsp\;Business Professional</span
+ ><br><br><h3></h3><p><b><span class="wysiwyg-color-black">We look forward 
+ to seeing you at the 2019 Undergraduate Career Fair!</span></b><br></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12747-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20191111T180000
+DTEND;TZID=America/New_York:20191111T193000
+CREATED:20190501T092625
+DESCRIPTION:The Center for Career Education (CCE) in collaboration with Col
+ umbia Women’s Business Society will hold a panel and networking session 
+ for organizations with opportunities in Advertising\, Marketing and Public
+  Relations. This event will shed light on the differences between these th
+ ree industries and allow you to network with professionals from several or
+ ganizations. Eligibility: Students that attend Columbia College\, Fu Foun
+ dation School of Engineering and Applied Science\, School of General Studi
+ es\, Barnard College\, Graduate School of Arts and Sciences\, and School o
+ f the ArtsLocation: Alfred Lerner Hall\, ROOM Satow\, 2920 Broadway\, New
+  York\, NYResume: it is always good practice to have your resume on-hand.
+  Employers may request one.Suggested Attire: Professional attire suggeste
+ dClick the "Join Event" button above to confirm your attendance. 
+LAST-MODIFIED:20190904T152423
+LOCATION:Satow Room\, Lerner Hall
+SUMMARY:2019 Industry Showcase: Advertising\, Marketing & Public Relations
+X-ALT-DESC;FMTTYPE=text/html:The Center for Career Education (CCE) in colla
+ boration with Columbia Women’s Business Society will hold a panel and ne
+ tworking session for organizations with opportunities in Advertising\, Mar
+ keting and Public Relations. This event will shed light on the differences
+  between these three industries and allow you to network with professional
+ s from several organizations. <br><p><b><u>Eligibility:</u></b>&nbsp\;Stud
+ ents that attend Columbia College\, Fu Foundation School of Engineering an
+ d Applied Science\, School of General Studies\, Barnard College\, Graduate
+  School of Arts and Sciences\, and School of the Arts<br></p><p><b><u>Loca
+ tion:</u></b>&nbsp\;Alfred Lerner Hall\, ROOM Satow\, 2920 Broadway\, New 
+ York\, NY</p><p><b><u>Resume:</u></b>&nbsp\;it is always good practice to 
+ have your resume on-hand. Employers may request one.<br><br><b><u>Suggeste
+ d Attire:</u></b>&nbsp\;Professional attire suggested</p><p>Click the "Joi
+ n Event" button above to confirm your attendance.&nbsp\;</p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190916T132105Z
+UID:12902-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/New_York:20190906T110000
+DTEND;TZID=America/New_York:20190906T150000
+CREATED:20190507T144331
+DESCRIPTION:All students (from all years and majors) are welcome to attend 
+ the Fall 2019 Beyond Barnard Opportunities Fair. Regardless of whether you
+  are exploring campus jobs\, internships\, full-time work\, or graduate sc
+ hool\, or are interested in conversations about career exploration and rea
+ diness\, we hope you'll join us for this campus-wide celebration.The theme
+  of the Fall 2019 Beyond Barnard Opportunities Fair is Diversity\, Equity\
+ , and Inclusion in the Workplace. In addition to the employer fair\, stude
+ nts will be able to attend panel discussions on a range of topics\; meet o
+ ne-on-one with Barnard alumnae and friends of the College (Barnard student
+ s only)\; attend a graduate fair featuring a range of programs\; and more.
+ The fair is open to the following schools:Barnard CollegeColumbia CollegeC
+ olumbia Engineering (Undergraduates programs only)School of General Studie
+ sLocation: Diana Canter\, Event OvalDress Code: Business Professional Atti
+ re Don't forget to join our Panel Discussions featuring alumnae with diver
+ se roles in the following fields:Diversity\, Equity & Inclusion Discussio
+ n on the ArtsDiscussion on SustainabilityDiscussion on TechnologyThese dis
+ cussions will be happening concurrently with the fair:  Location for the
+  panels is TBD.How to Prepare for the Opportunities Fair: Register to atte
+ nd a prep workshop at Beyond Barnard\, 2nd floor of Elliott Hall:Wednesday
+  September 4th Opportunities Fair Open House 10am - 4pm (Workshop 12-1pm)T
+ hursday\, September 5th\, Workshop 12-1pmQuestions? Contact Beyond Barnar
+ d beyondbarnard@barnard.edu.
+LAST-MODIFIED:20190507T145026
+LOCATION:3009 Broadway\, Manhattan\, New York City\, New York 10027\, Unite
+ d States of America
+SUMMARY:Fall 2019 Beyond Barnard Opportunities Fair - Fall 2019 Beyond Barn
+ ard Opportunities Fair
+X-ALT-DESC;FMTTYPE=text/html:<div>All students (from all years and majors) 
+ are welcome to attend the <b>Fall 2019 Beyond Barnard Opportunities Fair</
+ b>. Regardless of whether you are exploring campus jobs\, internships\, fu
+ ll-time work\, or graduate school\, or are interested in conversations abo
+ ut career exploration and readiness\, we hope you'll join us for this camp
+ us-wide celebration.<br><br>The theme of the Fall 2019 Beyond Barnard Oppo
+ rtunities Fair is Diversity\, Equity\, and Inclusion in the Workplace. In 
+ addition to the employer fair\, students will be able to attend panel disc
+ ussions on a range of topics\; meet one-on-one with Barnard alumnae and fr
+ iends of the College (Barnard students only)\; attend a graduate fair feat
+ uring a range of programs\; and more.<br><br>The fair is open to the follo
+ wing schools:<br></div><div><ul><li>Barnard College</li><li>Columbia Colle
+ ge</li><li>Columbia Engineering (Undergraduates programs only)</li><li>Sch
+ ool of General Studies</li></ul></div><div><strong>Location: </strong>Dian
+ a Canter\, Event Oval<strong><strong><br>Dress Code: </strong></strong>Bus
+ iness Professional Attire <br><br><br>Don't forget to join our Panel Discu
+ ssions featuring alumnae with diverse roles in the following fields:<br><b
+ r><a target="_blank" rel="nofollow" href="https://barnard.joinhandshake.co
+ m/events/336883/share_preview">Diversity\, Equity &amp\; Inclusion</a>&nbs
+ p\;<br><a target="_blank" rel="nofollow" href="https://barnard.joinhandsha
+ ke.com/events/336885/share_preview">Discussion on the Arts</a><br><a targe
+ t="_blank" rel="nofollow" href="https://barnard.joinhandshake.com/events/3
+ 36921/share_preview">Discussion on Sustainability</a><br><a target="_blank
+ " rel="nofollow" href="https://barnard.joinhandshake.com/events/336923/sha
+ re_preview">Discussion on Technology</a><br><br>These discussions will be 
+ happening concurrently with the fair:&nbsp\;&nbsp\;<i>Location for the pan
+ els is TBD.</i><br><br><br></div><p><b><span class="wysiwyg-color-black">H
+ ow to Prepare for the Opportunities Fair: </span></b><span class="wysiwyg-
+ color-black">Register to attend a prep workshop at Beyond Barnard\, 2nd fl
+ oor of Elliott Hall:</span></p><ul><li><span class="wysiwyg-color-black">W
+ ednesday September 4th </span><span class="wysiwyg-color-black">Opportunit
+ ies Fair Open House 10am - 4pm (Workshop 12-1pm)</span></li><li><span clas
+ s="wysiwyg-color-black">Thursday\, September 5th\, Workshop 12-1pm</span><
+ /li></ul><b>Questions? </b>Contact<b>&nbsp\;</b>Beyond Barnard <a target="
+ _blank" rel="nofollow">beyondbarnard@barnard.edu</a>.
+END:VEVENT
+END:VCALENDAR
