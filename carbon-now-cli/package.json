@@ -1,0 +1,114 @@
+{
+  "_from": "carbon-now-cli",
+  "_id": "carbon-now-cli@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-VVwArD/VAKG2p7Om8x5E7eEHNS/7b2agp8o7zM6i0XXento1XTkLynaQRsuwCtjJwSSvOvNTyRN/akiFQhGBDA==",
+  "_location": "/carbon-now-cli",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "carbon-now-cli",
+    "name": "carbon-now-cli",
+    "escapedName": "carbon-now-cli",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/carbon-now-cli/-/carbon-now-cli-1.4.0.tgz",
+  "_shasum": "6559252d2dd71ac42c9a15b61cd1d12c458636ac",
+  "_spec": "carbon-now-cli",
+  "_where": "C:\\Users\\tianb\\Google Drive\\work\\AWS\\projects\\demo",
+  "author": {
+    "name": "Miloš Sutanovac",
+    "email": "sutanovac.milos@gmail.com",
+    "url": "https://mixn.io"
+  },
+  "bin": {
+    "carbon-now": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/mixn/carbon-now-cli/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clipboardy": "^1.2.3",
+    "del": "^3.0.0",
+    "file-exists": "^5.0.1",
+    "file-extension": "^4.0.5",
+    "get-stdin": "^6.0.0",
+    "globby": "^8.0.1",
+    "inquirer": "^6.2.1",
+    "jsonfile": "^5.0.0",
+    "listr": "^0.14.3",
+    "lodash": "^4.17.11",
+    "meow": "^5.0.0",
+    "nanoid": "^2.0.0",
+    "opn": "^5.4.0",
+    "puppeteer": "^1.11.0",
+    "query-string": "^6.2.0",
+    "tempy": "^0.2.1",
+    "terminal-image": "^0.1.2",
+    "update-notifier": "^2.5.0"
+  },
+  "deprecated": false,
+  "description": "Beautiful images of your code — from right inside your terminal.",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "child-process-promise": "^2.2.1",
+    "execa": "^1.0.0",
+    "husky": "^1.0.0-rc.14",
+    "xo": "^0.21.1"
+  },
+  "engines": {
+    "node": ">=8.3"
+  },
+  "files": [
+    "cli.js",
+    "src"
+  ],
+  "homepage": "https://github.com/mixn/carbon-now-cli#readme",
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "keywords": [
+    "cli",
+    "cli-app",
+    "carbon-now",
+    "carbon-now-sh",
+    "carbon-now-sh-cli",
+    "carbon",
+    "screenshot",
+    "beautiful"
+  ],
+  "license": "MIT",
+  "name": "carbon-now-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixn/carbon-now-cli.git"
+  },
+  "scripts": {
+    "ava": "ava --serial",
+    "test": "xo && ava --serial"
+  },
+  "version": "1.4.0",
+  "xo": {
+    "ignores": [
+      "test/test-dummies/*.js"
+    ],
+    "globals": [
+      "document"
+    ],
+    "rules": {
+      "no-warning-comments": 0,
+      "promise/prefer-await-to-then": 0
+    }
+  }
+}

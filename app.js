@@ -14,7 +14,8 @@ const fileUpload = require("./controllers/upload");
 // EJS
 app.set("view engine", "ejs");
 // public static folder
-app.use(express.static("./public"));
+//app.use(express.static("public"));
+app.use("/public", express.static(__dirname + "/public"));
 app.get("/", (req, res) => res.render("index"));
 app.get("/upload", (req, res) => res.render("upload"));
 app.post("/upload", fileUpload);
