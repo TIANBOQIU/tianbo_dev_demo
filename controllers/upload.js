@@ -4,7 +4,8 @@
 const multer = require("multer");
 const path = require("path");
 const nanoid = require("nanoid");
-
+const gulp = require("gulp");
+const exec = require("child_process").exec;
 // set storage engine
 const storage = multer.diskStorage({
   destination: path.join(__dirname, "..", "public", "uploads"),
@@ -25,14 +26,19 @@ const upload = multer({
 function uploadHandler(req, res) {
   upload(req, res, err => {
     if (err) {
-      res.render("upload", { msg: err });
-    } else {
-      console.log(req.file);
-      res.render("upload", {
-        msg: "File uploaded!",
-        file: `uploads/${req.file.path}`
-      });
+      return res.render("upload", { msg: err });
     }
+    console.log(req.file);
+    // generate carbon-now image
+    gulp.task("task", function(cb) {
+      let carbon_path = path.join(__dirname, "..", "node_modules", ".bin");
+
+      exec();
+    });
+    res.render("upload", {
+      msg: "File uploaded!",
+      file: `uploads/${req.file.path}`
+    });
   });
 }
 
