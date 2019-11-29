@@ -6,7 +6,7 @@ const app = (module.exports.app = express());
 const http = require("http");
 const https = require("https");
 const httpServer = (module.exports.httpServer = http.createServer(app));
-
+//const io = require("socket.io")(httpServer);
 const port = 3000;
 
 const fileUpload = require("./controllers/upload");

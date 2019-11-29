@@ -1,11 +1,15 @@
 /**
  * controller to handle file upload
  */
+const { httpServer } = require("../app");
 const multer = require("multer");
 const path = require("path");
 const nanoid = require("nanoid");
 const gulp = require("gulp");
 const exec = require("child_process").exec;
+const io = require("socket.io")(httpServer);
+
+// io.on("connection", socket => console.log("a user connected"));
 
 const image_save_dir = path.join(__dirname, "..", "public", "uploads");
 // set storage engine
@@ -26,6 +30,11 @@ const upload = multer({
 }).single("myFile"); // the front end input
 
 function uploadHandler(req, res) {
+  //   io.on("connection", function(socket) {
+  //     let msg = "loading";
+  //     io.emit("loading", msg);
+  //   });
+
   upload(req, res, err => {
     if (err) {
       return res.render("upload", { msg: err });
