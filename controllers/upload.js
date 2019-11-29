@@ -40,6 +40,7 @@ function uploadHandler(req, res) {
     const source = path.join("public", "uploads", req.file.filename);
     const save_dir = path.join("public", "saved");
     const id = path.parse(source).name.substring(7);
+
     exec(
       "node " + cli_path + " " + source + " -l " + save_dir + " -t " + id,
       (err, stdout, stderr) => {
@@ -49,7 +50,7 @@ function uploadHandler(req, res) {
         console.log("finish!");
         res.render("upload", {
           msg: "File uploaded!",
-          file: `uploads/${req.file.path}`,
+          file: ``,
           img: path.join("public", "saved", `${id}.png`)
         });
       }
