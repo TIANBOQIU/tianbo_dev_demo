@@ -72,7 +72,7 @@ function uploadHandler(req, res) {
         let url = "http://" + config.host + "/sourcecode/" + filename;
         res.render("upload", {
           msg: "File uploaded!",
-          file: `sharable url : ${url}`,
+          file: url,
           img: path.join("public", "saved", `${id}.png`)
         });
       }

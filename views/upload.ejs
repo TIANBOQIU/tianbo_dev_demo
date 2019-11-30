@@ -11,36 +11,46 @@
     <title>Node File Upload</title>
   </head>
   <body>
-    <div class="container">
-      <h5>source code upload:</h5>
-      <%= typeof msg != 'undefined' ? msg : '' %>
-      <form
-        id="form-code"
-        action="/upload"
-        method="POST"
-        enctype="multipart/form-data"
-      >
-        <div class="file-field input-field">
-          <div class="btn gray">
-            <span>File</span>
-            <input name="myFile" type="file" />
+    <div class="row">
+      <div class="col s3">
+        <h5>source code upload:</h5>
+        <%= typeof msg != 'undefined' ? msg : '' %>
+        <form
+          id="form-code"
+          action="/upload"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="file-field input-field">
+            <div class="btn gray">
+              <span>File</span>
+              <input name="myFile" type="file" />
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" />
+            </div>
           </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text" />
-          </div>
+          <button type="submit" id="submit-code" class="gray">submit</button>
+        </form>
+      </div>
+      <div class="col s9">
+        <div>
+          <% if (typeof img != 'undefined') { %>
+          <h5>sharable URL:</h5>
+          <a href="<%= typeof file != 'undefined' ? file : '' %>"
+            ><%= typeof file != 'undefined' ? file : '' %></a
+          >
+
+          <% } %>
         </div>
-        <button type="submit" id="submit-code" class="gray">submit</button>
-      </form>
-      <div>
-        <%= typeof file != 'undefined' ? file : '' %>
-      </div>
-      <div id="loading-container">
-        <img id="loading-icon" src="public/loading.gif" alt="" hidden />
-      </div>
-      <div>
-        <% if (typeof img != 'undefined') { %>
-        <img id="result" class="responsive-img" src="<%= img %>" alt="" />
-        <% } %>
+        <div id="loading-container">
+          <img id="loading-icon" src="public/loading.gif" alt="" hidden />
+        </div>
+        <div>
+          <% if (typeof img != 'undefined') { %>
+          <img id="result" class="responsive-img" src="<%= img %>" alt="" />
+          <% } %>
+        </div>
       </div>
     </div>
 
