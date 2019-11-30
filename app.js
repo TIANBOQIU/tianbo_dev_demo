@@ -7,6 +7,7 @@ const http = require("http");
 const https = require("https");
 const httpServer = (module.exports.httpServer = http.createServer(app));
 //const io = require("socket.io")(httpServer);
+const HOSTNAME = "tianbo.dev";
 const httpPort = 80;
 const httpsPort = 443;
 
@@ -15,6 +16,15 @@ const httpsOptions = {
   ca: fs.readFileSync("./ssl/tianbo_dev.ca-bundle"),
   key: fs.readFileSync("./ssl/tianbo_dev.key")
 };
+
+const httpsServer = https.createServer(httpsOptions, app);
+
+app.use((req, res, next) => {
+  if (req.protocol === "http") {
+    res.redirect(301, `https://${req.headers.host}${req.url}`);
+  }
+  next();
+});
 
 const fileUpload = require("./controllers/upload");
 const { getS3Image } = require("./controllers/store_image");
@@ -33,4 +43,8 @@ app.get("/upload", (req, res) => res.render("upload"));
 app.post("/upload", fileUpload);
 app.get("/sourcecode/:filename", getS3Image);
 
-httpServer.listen(port, () => console.log(`server started on port ${port}`));
+//httpServer.listen(port, () => console.log(`server started on port ${port}`));
+httpServer.listen(httpPort, "0.0.0.0", HOSTNAME);
+httpsServer.listen(httpsPort, "0.0.0.0", HOSTNAME, () =>
+  console.log("listening on port" + httpsPort)
+);
