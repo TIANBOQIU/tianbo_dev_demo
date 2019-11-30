@@ -11,7 +11,8 @@ module.exports = async ({
   // Launch browser
   headless = true; // Tianbo: force headless
   const browser = await puppeteer.launch({
-    headless
+    headless,
+    args: ["--no-sandbox"]
   });
   // Open new page
   const page = await browser.newPage();
