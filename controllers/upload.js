@@ -8,7 +8,8 @@ const nanoid = require("nanoid");
 const gulp = require("gulp");
 const exec = require("child_process").exec;
 const io = require("socket.io")(httpServer);
-
+const config = require("../config");
+const urljoin = require("url-join");
 // controllers
 const { uploadToS3 } = require("../controllers/store_image");
 
@@ -68,9 +69,10 @@ function uploadHandler(req, res) {
           .catch(err => {
             console.log("failed saving on s3 ", err);
           });
+        let url = "http://" + config.host + "/sourcecode/" + filename;
         res.render("upload", {
           msg: "File uploaded!",
-          file: ``,
+          file: `sharable url : ${url}`,
           img: path.join("public", "saved", `${id}.png`)
         });
       }

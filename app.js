@@ -10,7 +10,7 @@ const httpServer = (module.exports.httpServer = http.createServer(app));
 const port = 3000;
 
 const fileUpload = require("./controllers/upload");
-
+const { getS3Image } = require("./controllers/store_image");
 /**
  * set up the app
  */
@@ -24,5 +24,6 @@ app.use("/public", express.static(__dirname + "/public"));
 app.get("/", (req, res) => res.render("index"));
 app.get("/upload", (req, res) => res.render("upload"));
 app.post("/upload", fileUpload);
+app.get("/sourcecode/:filename", getS3Image);
 
 httpServer.listen(port, () => console.log(`server started on port ${port}`));
