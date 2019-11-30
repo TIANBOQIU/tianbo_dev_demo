@@ -7,7 +7,14 @@ const http = require("http");
 const https = require("https");
 const httpServer = (module.exports.httpServer = http.createServer(app));
 //const io = require("socket.io")(httpServer);
-const port = 3000;
+const httpPort = 80;
+const httpsPort = 443;
+
+const httpsOptions = {
+  cert: fs.readFileSync("./ssl/tianbo_dev.crt"),
+  ca: fs.readFileSync("./ssl/tianbo_dev.ca-bundle"),
+  key: fs.readFileSync("./ssl/tianbo_dev.key")
+};
 
 const fileUpload = require("./controllers/upload");
 const { getS3Image } = require("./controllers/store_image");

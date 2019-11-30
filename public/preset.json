@@ -1,0 +1,42 @@
+{
+  "latest-preset": {
+    "t": "3024-night",
+    "bg": "#ADB7C1",
+    "wt": "sharp",
+    "wc": true,
+    "fm": "Fantasque Sans Mono",
+    "fs": "12px",
+    "ln": true,
+    "ds": false,
+    "dsyoff": "20px",
+    "dsblur": "68px",
+    "wa": true,
+    "lh": "133%",
+    "pv": "0px",
+    "ph": "0px",
+    "si": false,
+    "wm": false,
+    "es": "1x",
+    "type": "png"
+  },
+  "new-preset": {
+    "t": "nord",
+    "bg": "#ADB7C1",
+    "wt": "sharp",
+    "wc": true,
+    "fm": "Fantasque Sans Mono",
+    "fs": "12px",
+    "ln": true,
+    "ds": false,
+    "dsyoff": "20px",
+    "dsblur": "68px",
+    "wa": true,
+    "lh": "133%",
+    "pv": "0px",
+    "ph": "0px",
+    "si": false,
+    "wm": false,
+    "es": "1x",
+    "type": "png"
+  }
+}
