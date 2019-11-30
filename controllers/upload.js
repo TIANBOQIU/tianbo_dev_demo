@@ -9,6 +9,9 @@ const gulp = require("gulp");
 const exec = require("child_process").exec;
 const io = require("socket.io")(httpServer);
 
+// controllers
+const { uploadToS3 } = require("../controllers/store_image");
+
 // io.on("connection", socket => console.log("a user connected"));
 
 const image_save_dir = path.join(__dirname, "..", "public", "uploads");
@@ -49,7 +52,7 @@ function uploadHandler(req, res) {
     const source = path.join("public", "uploads", req.file.filename);
     const save_dir = path.join("public", "saved");
     const id = path.parse(source).name.substring(7);
-
+    const filename = id + ".png";
     exec(
       "node " + cli_path + " " + source + " -l " + save_dir + " -t " + id,
       (err, stdout, stderr) => {
@@ -57,6 +60,14 @@ function uploadHandler(req, res) {
           return console.log(err);
         }
         console.log("finish!");
+
+        uploadToS3(filename)
+          .then(res => {
+            console.log(filename, " saved on s3", res);
+          })
+          .catch(err => {
+            console.log("failed saving on s3 ", err);
+          });
         res.render("upload", {
           msg: "File uploaded!",
           file: ``,
