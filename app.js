@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const multer = require("multer");
 const ejs = require("ejs");
@@ -20,12 +21,14 @@ const httpsOptions = {
 
 const httpsServer = https.createServer(httpsOptions, app);
 
-app.use((req, res, next) => {
-  if (req.protocol === "http") {
-    res.redirect(301, `https://${req.headers.host}${req.url}`);
-  }
-  next();
-});
+if (process.env.NODE_ENV == "REMOTE") {
+  app.use((req, res, next) => {
+    if (req.protocol === "http") {
+      res.redirect(301, `https://${req.headers.host}${req.url}`);
+    }
+    next();
+  });
+}
 
 const fileUpload = require("./controllers/upload");
 const { getS3Image } = require("./controllers/store_image");
@@ -45,7 +48,15 @@ app.post("/upload", fileUpload);
 app.get("/sourcecode/:filename", getS3Image);
 
 //httpServer.listen(port, () => console.log(`server started on port ${port}`));
-httpServer.listen(httpPort, "0.0.0.0", HOSTNAME);
-httpsServer.listen(httpsPort, "0.0.0.0", HOSTNAME, () =>
-  console.log("listening on port" + httpsPort)
-);
+
+if (process.env.NODE_ENV == "REMOTE") {
+  httpServer.listen(httpPort, "0.0.0.0", HOSTNAME);
+  httpsServer.listen(httpsPort, "0.0.0.0", HOSTNAME, () =>
+    console.log("listening on port" + httpsPort)
+  );
+} else if (process.env.NODE_ENV == "TEST") {
+  let test_port = 3000;
+  httpServer.listen(test_port, () =>
+    console.log(`server started on port ${test_port}`)
+  );
+}

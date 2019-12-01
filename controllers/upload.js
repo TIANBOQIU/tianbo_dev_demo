@@ -40,7 +40,7 @@ function uploadHandler(req, res) {
   //   });
 
   upload(req, res, err => {
-    if (err) {
+    if (err || typeof req.file.filename === "undefined") {
       return res.render("upload", { msg: err });
     }
     console.log(req.file);
@@ -69,7 +69,11 @@ function uploadHandler(req, res) {
           .catch(err => {
             console.log("failed saving on s3 ", err);
           });
-        let url = "http://" + config.host + "/sourcecode/" + filename;
+        let hostname =
+          process.env.NODE_ENV == "REMOTE"
+            ? process.env.remoteHost
+            : process.env.localHost;
+        let url = "http://" + hostname + "/sourcecode/" + filename;
         res.render("upload", {
           msg: "File uploaded!",
           file: url,
