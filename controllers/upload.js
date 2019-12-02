@@ -12,7 +12,7 @@ const config = require("../config");
 const urljoin = require("url-join");
 const imagemin = require("imagemin");
 const imageminPngquant = require("imagemin-pngquant");
-
+const fs = require("fs");
 // controllers
 const { uploadToS3 } = require("../controllers/store_image");
 
@@ -58,6 +58,14 @@ function uploadHandler(req, res) {
     const save_dir = path.join("public", "saved");
     const id = path.parse(source).name.substring(7);
     const filename = id + ".png";
+    const style = req.body.style;
+    const preset = JSON.parse(fs.readFileSync("public/preset.json"));
+    //fs.readFileSync("public/preset.json");
+    if (style != null) preset["latest-preset"]["t"] = style;
+    console.log("the preset is : ", preset);
+    console.log("my theme is ", style);
+    fs.writeFileSync("public/preset-new.json", JSON.stringify(preset));
+    console.log("write preset done!");
     exec(
       "node " +
         cli_path +
@@ -67,7 +75,7 @@ function uploadHandler(req, res) {
         save_dir +
         " -t " +
         id +
-        " --config public/preset.json",
+        " --config public/preset-new.json",
       (err, stdout, stderr) => {
         if (err) {
           return console.log(err);
