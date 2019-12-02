@@ -4,73 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <title>Node File Upload</title>
+    <title>Document</title>
   </head>
   <body>
-    <div class="row">
-      <div class="col s3">
-        <h5>source code upload:</h5>
-        <%= typeof msg != 'undefined' ? msg : '' %>
-        <form
-          name="codeForm"
-          id="form-code"
-          action="/upload"
-          onsubmit=" return validateForm()"
-          method="POST"
-          enctype="multipart/form-data"
+    <div>
+      <form
+        name="codeForm"
+        id="form-code"
+        action="/upload"
+        onsubmit=" return validateForm()"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <h5>file</h5>
+        <input type="file" name="myFile" />
+        <select name="style">
+          <option value="" disabled selected>Choose Theme</option>
+          <option value="nord" selected>Nord</option>
+          <option value="seti">Seti</option>
+          <option value="base16-light">3Base 16 (Light)</option>
+          <option value="base16-dark">Base 16 (Dark)</option>
+        </select>
+        <button style="display: block" type="submit" id="submit-code">
+          submit
+        </button>
+      </form>
+      <div>
+        <% if (typeof img != 'undefined') { %>
+        <h5>sharable URL:</h5>
+        <a href="<%= typeof file != 'undefined' ? file : '' %>"
+          ><%= typeof file != 'undefined' ? file : '' %></a
         >
-          <div class="file-field input-field">
-            <div class="btn gray">
-              <span>File</span>
-              <input name="myFile" type="file" />
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text" />
-            </div>
-          </div>
-          <div class="input-field  ">
-            <select name="style">
-              <option value="" disabled selected>Choose Theme</option>
-              <option value="nord" selected>Nord</option>
-              <option value="seti">Seti</option>
-              <option value="base16-light">3Base 16 (Light)</option>
-              <option value="base16-dark">Base 16 (Dark)</option>
-            </select>
-            <!-- <label class="teal lighten-2">Theme</label> -->
-          </div>
 
-          <button
-            style="display: block"
-            type="submit"
-            id="submit-code"
-            class="gray"
-          >
-            submit
-          </button>
-        </form>
+        <% } %>
       </div>
-      <div class="col s6 offset-s2">
-        <div>
-          <% if (typeof img != 'undefined') { %>
-          <h5>sharable URL:</h5>
-          <a href="<%= typeof file != 'undefined' ? file : '' %>"
-            ><%= typeof file != 'undefined' ? file : '' %></a
-          >
 
-          <% } %>
-        </div>
-        <div id="loading-container">
-          <img id="loading-icon" src="public/loading.gif" alt="" hidden />
-        </div>
-        <div>
-          <% if (typeof img != 'undefined') { %>
-          <img id="result" class="responsive-img" src="<%= img %>" alt="" />
-          <% } %>
-        </div>
+      <div id="loading-container">
+        <img id="loading-icon" src="public/loading.gif" alt="" hidden />
+      </div>
+
+      <div>
+        <% if (typeof img != 'undefined') { %>
+        <img id="result" class="responsive-img" src="<%= img %>" alt="" />
+        <% } %>
       </div>
     </div>
 
@@ -79,19 +55,10 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
     <script>
       var socket = io();
-      $(document).ready(function() {
-        $("select").formSelect();
-      });
-      //socket.on("loading", msg => console.log(msg));
-      // $("#form-code").submit(() => {
-      //   $("#loading-icon").show();
-      //   $("#result").hide();
-      // });
       function validateForm() {
         let form = document.forms["codeForm"];
         console.log(form);

@@ -41,12 +41,12 @@ function uploadHandler(req, res) {
   //     let msg = "loading";
   //     io.emit("loading", msg);
   //   });
-  console.log(req.body);
 
   upload(req, res, err => {
     if (err || typeof req.file === "undefined") {
       return res.render("upload", { msg: err });
     }
+    console.log("the request body", req.body.style);
     console.log(req.file);
     // generate carbon-now image
     // const carbon_path = path.join(__dirname, "..", "carbon-now-cli", "cli.js");
