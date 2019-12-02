@@ -8,6 +8,7 @@ const app = (module.exports.app = express());
 const http = require("http");
 const https = require("https");
 const httpServer = (module.exports.httpServer = http.createServer(app));
+const bodyParser = require("body-parser");
 //const io = require("socket.io")(httpServer);
 const HOSTNAME = "tianbo.dev";
 const httpPort = 80;
@@ -41,6 +42,13 @@ app.set("view engine", "ejs");
 // public static folder
 //app.use(express.static("public"));
 
+// app.use(
+//   bodyParser.urlencoded({
+//     extended: true
+//   })
+// );
+// app.use(bodyParser.json());
+app.use(express.urlencoded());
 app.use("/public", express.static(__dirname + "/public"));
 app.get("/", (req, res) => res.render("index"));
 app.get("/upload", (req, res) => res.render("upload"));

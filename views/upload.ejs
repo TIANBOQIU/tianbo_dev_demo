@@ -16,8 +16,10 @@
         <h5>source code upload:</h5>
         <%= typeof msg != 'undefined' ? msg : '' %>
         <form
+          name="codeForm"
           id="form-code"
           action="/upload"
+          onsubmit=" return validateForm()"
           method="POST"
           enctype="multipart/form-data"
         >
@@ -30,10 +32,28 @@
               <input class="file-path validate" type="text" />
             </div>
           </div>
-          <button type="submit" id="submit-code" class="gray">submit</button>
+          <div class="input-field  ">
+            <select name="style">
+              <option value="" disabled selected>Choose Theme</option>
+              <option value="nord" selected>Nord</option>
+              <option value="seti">Seti</option>
+              <option value="base16-light">3Base 16 (Light)</option>
+              <option value="base16-dark">Base 16 (Dark)</option>
+            </select>
+            <!-- <label class="teal lighten-2">Theme</label> -->
+          </div>
+
+          <button
+            style="display: block"
+            type="submit"
+            id="submit-code"
+            class="gray"
+          >
+            submit
+          </button>
         </form>
       </div>
-      <div class="col s9">
+      <div class="col s6 offset-s2">
         <div>
           <% if (typeof img != 'undefined') { %>
           <h5>sharable URL:</h5>
@@ -54,21 +74,173 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
     <script>
       var socket = io();
+      $(document).ready(function() {
+        $("select").formSelect();
+      });
       //socket.on("loading", msg => console.log(msg));
-      $("#form-code").submit(() => {
+      // $("#form-code").submit(() => {
+      //   $("#loading-icon").show();
+      //   $("#result").hide();
+      // });
+      function validateForm() {
+        let form = document.forms["codeForm"];
+        let file = form["myFile"];
+        const name = file.files[0] == null ? null : file.files[0].name;
+        const size = file.files[0] == null ? null : file.files[0].size;
+        //const { name, size } = file.files[0];
+        console.log(name + " " + size);
+        let errors = [];
+        if (name == null || name.length == 0)
+          errors.push("file input is empty!\n");
+        if (size > 2500000) errors.push("file too large (should < 2.5MB)\n");
+        const exts = new Set([
+          "htaccess",
+          "sh",
+          "c",
+          "h",
+          "C",
+          "cc",
+          "cpp",
+          "cxx",
+          "c++",
+          "hh",
+          "hpp",
+          "hxx",
+          "h++",
+          "cs",
+          "clj",
+          "cljs",
+          "cljc",
+          "edn",
+          "cbl",
+          "cob",
+          "cpy",
+          "coffee",
+          "litcoffee",
+          "cr",
+          "css",
+          "d",
+          "dart",
+          "ex",
+          "exs",
+          "erl",
+          "hrl",
+          "f",
+          "for",
+          "f90",
+          "fs",
+          "fsi",
+          "fsx",
+          "fsscript",
+          "ml",
+          "mli",
+          "graphql",
+          "gql",
+          "go",
+          "groovy",
+          "hbs",
+          "handlebars",
+          "hs",
+          "lhs",
+          "hx",
+          "hxml",
+          "html",
+          "java",
+          "class",
+          "jar",
+          "js",
+          "json",
+          "jsx",
+          "kt",
+          "kts",
+          "tex",
+          "lisp",
+          "cl",
+          "lsp",
+          "md",
+          "nb",
+          "wl",
+          "nt",
+          "conf",
+          "nim",
+          "m",
+          "mm",
+          "M",
+          "pp",
+          "pas",
+          "inc",
+          "php",
+          "phtml",
+          "php3",
+          "php4",
+          "php5",
+          "php7",
+          "phps",
+          "php-s",
+          "ps1",
+          "ps1xml",
+          "psc1",
+          "psd1",
+          "psm1",
+          "pssc",
+          "cdxml",
+          "py",
+          "pyc",
+          "pyd",
+          "pyo",
+          "pyw",
+          "pyz",
+          "r",
+          "R",
+          "RData",
+          "rds",
+          "rda",
+          "rb",
+          "rs",
+          "rslib",
+          "sass",
+          "scss",
+          "scala",
+          "sc",
+          "sql",
+          "stylus",
+          "swift",
+          "tcl",
+          "tbc",
+          "toml",
+          "ttl",
+          "ts",
+          "tsx",
+          "vb",
+          "v",
+          "vhdl",
+          "vhd",
+          "vue",
+          "xml",
+          "yaml",
+          "yml"
+        ]);
+        if (name != null && name.length > 0 && !exts.has(name.split(".").pop()))
+          errors.push("unsupported ext: " + name.split(".").pop());
+        if (errors.length > 0) {
+          alert(errors.join("\n"));
+          return false;
+        }
         $("#loading-icon").show();
         $("#result").hide();
-      });
+        //$(this).trigger("submit");
+        return true;
+      }
     </script>
   </body>
 </html>
