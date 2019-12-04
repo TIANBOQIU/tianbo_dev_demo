@@ -59,9 +59,16 @@ function uploadHandler(req, res) {
     const id = path.parse(source).name.substring(7);
     const filename = id + ".png";
     const style = req.body.style;
+    const font_style = req.body["font-style"];
+    const font_size = req.body["font-size"];
+    console.log("the font style is ", font_style);
+    console.log("the font size is ", font_size, "px");
     const preset = JSON.parse(fs.readFileSync("public/preset.json"));
     //fs.readFileSync("public/preset.json");
     if (style != null) preset["latest-preset"]["t"] = style;
+    if (font_style != null) preset["latest-preset"]["fm"] = font_style;
+    if (font_size != null && font_size > 0)
+      preset["latest-preset"]["fs"] = font_size + "px";
     console.log("the preset is : ", preset);
     console.log("my theme is ", style);
     fs.writeFileSync("public/preset-new.json", JSON.stringify(preset));

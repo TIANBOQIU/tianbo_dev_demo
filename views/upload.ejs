@@ -13,7 +13,10 @@
   <body>
     <div class="row">
       <div class="col s3">
-        <h5>source code upload:</h5>
+        <h5 style="font-size:16px; color:gray;">
+          upload source code here
+        </h5>
+        <!-- <label for="myFile">upload source code</label> -->
         <%= typeof msg != 'undefined' ? msg : '' %>
         <form
           name="codeForm"
@@ -28,6 +31,7 @@
               <span>File</span>
               <input name="myFile" type="file" />
             </div>
+            <!-- <label for="myFile">upload source code</label> -->
             <div class="file-path-wrapper">
               <input class="file-path validate" type="text" />
             </div>
@@ -37,10 +41,34 @@
               <option value="" disabled selected>Choose Theme</option>
               <option value="nord" selected>Nord</option>
               <option value="seti">Seti</option>
-              <option value="base16-light">3Base 16 (Light)</option>
+              <option value="base16-light">Base 16 (Light)</option>
               <option value="base16-dark">Base 16 (Dark)</option>
             </select>
-            <!-- <label class="teal lighten-2">Theme</label> -->
+            <label for="style">theme</label>
+          </div>
+          <div class="input-field  ">
+            <!-- "Dank Mono": "dm",
+              "Anonymous Pro": "Anonymous Pro",
+              "Droid Sans Mono": "Droid Sans Mono",
+              "Fantasque Sans Mono": "Fantasque Sans Mono",
+              "Fira Code": "Fira Code",
+              "Monoid": "Monoid",
+              "Hack": "Hack",
+              "IBM Plex Mono": "IBM Plex Mono",
+              "Iosevka": "Iosevka",
+              "Inconsolata": "Inconsolata",
+              "Source Code Pro": "Source Code Pro",
+              "Ubuntu Mono": "Ubuntu Mono" -->
+            <select name="font-style">
+              <option value="" disabled selected>Choose Font</option>
+              <option value="dm" selected>Dank Mono</option>
+              <option value="IBM Plex Mono">IBM Plex Mono</option>
+            </select>
+            <label for="font-style">font-family</label>
+          </div>
+          <div class="input-field  ">
+            <input type="text" name="font-size" value="12" />
+            <label for="font-size">font-size (in px)</label>
           </div>
 
           <button
@@ -56,7 +84,9 @@
       <div class="col s6 offset-s2">
         <div>
           <% if (typeof img != 'undefined') { %>
-          <h5>sharable URL:</h5>
+          <h5 style="font-size:16px; color:gray;">
+            sharable URL:
+          </h5>
           <a href="<%= typeof file != 'undefined' ? file : '' %>"
             ><%= typeof file != 'undefined' ? file : '' %></a
           >
@@ -98,6 +128,8 @@
         let file = form["myFile"];
         const name = file.files[0] == null ? null : file.files[0].name;
         const size = file.files[0] == null ? null : file.files[0].size;
+        const fs = form["font-size"].value;
+        console.log("font-size:", form["font-size"].value);
         //const { name, size } = file.files[0];
         console.log(name + " " + size);
         let errors = [];
@@ -233,6 +265,9 @@
         ]);
         if (name != null && name.length > 0 && !exts.has(name.split(".").pop()))
           errors.push("unsupported ext: " + name.split(".").pop());
+        // check font-size field
+        if (typeof fs == undefined || fs <= 0)
+          errors.push("font-size should be greater than 0");
         if (errors.length > 0) {
           alert(errors.join("\n"));
           return false;
