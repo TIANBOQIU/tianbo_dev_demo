@@ -44,10 +44,11 @@ app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 app.use("/public", express.static(__dirname + "/public"));
-app.get("/", (req, res) => res.render("index"));
+app.get("/", (req, res) => res.render("landing"));
 app.get("/upload", (req, res) => res.render("upload"));
 app.post("/upload", fileUpload);
 app.get("/sourcecode/:filename", getS3Image);
+//app.get("/landing", (req, res) => res.render("landing"));
 
 //httpServer.listen(port, () => console.log(`server started on port ${port}`));
 
