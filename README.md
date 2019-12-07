@@ -1,5 +1,9 @@
 ### README
-_tianbo.dev/upload_
+
+![demo image](./public/demo-index.png)
+
+
+[https://tianbo.dev/upload](https://tianbo.dev/upload)
 
 > usage
 1. upload your source code file and the language will be auto detected
